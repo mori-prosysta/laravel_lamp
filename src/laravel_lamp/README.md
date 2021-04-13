@@ -15,6 +15,9 @@ cd app_name
 ・このリポジトリをgit cloneで持ってくる
 git clone https://github.com/mori-prosysta/laravel_lamp.git
 
+・アプリのフォルダまで移動
+cd src/laravel_lamp
+
 ・.envファイルの作成
 cp .env.sample .env
 
@@ -32,6 +35,9 @@ docker exec -it laravel_lamp_web bash
 
 ・アプリがあるディレクトリへ移動
 cd laravel_lamp
+
+・laravelを動かすためのパッケージをインストール
+composer install
 
 ・権限付与
 chmod 777 -R storage/
